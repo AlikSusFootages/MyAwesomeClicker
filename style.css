@@ -7,6 +7,7 @@ body {
 .centered{
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     top: 50%;
     transform: translateY(-50%);
