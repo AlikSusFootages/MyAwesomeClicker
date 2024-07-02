@@ -8,5 +8,5 @@ Counter.textContent = Count;
 function Click() {
     Count++;
     Counter.textContent = Count;
-    localStorage.setItem('count', count);
+    localStorage.setItem('count', Count);
 }
