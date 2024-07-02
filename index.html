@@ -64,9 +64,9 @@
             
             
             setInterval(() => {
-                const currentTime = Date.now();
-                const timeLeft = Math.max(0, 400 - (currentTime - lastClickTime));
-                Button.textContent = timeLeft > 0 ? `Wait ${timeLeft} ms` : "Click me!";
+                const CurrentTime = Date.now();
+                const TimeLeft = Math.max(0, 400 - (currentTime - LastClickTime));
+                Button.textContent = TimeLeft > 0 ? `Wait ${TimeLeft} ms` : "Click me!";
             }, 100);
         </script>
     </body>
