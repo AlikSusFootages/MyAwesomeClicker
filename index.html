@@ -47,13 +47,18 @@
 
             let Count = localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 0;
             let Skolko = 1;
+            let LastClickTime = 0;
+            const Cooldown = 400;
             
             Counter.textContent = Count;
                 
             Button.addEventListener("click", () => { 
+                const CurrentTime = Date.now()
+                if (CurrentTime - LastClickTime >= Cooldown)
                 Count++;
                 Counter.textContent = Count;
                 localStorage.setItem('count', Count);
+                LastClickTime = CurrentTime;
             });
         </script>
     </body>
