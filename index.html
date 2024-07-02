@@ -61,6 +61,13 @@
                     LastClickTime = CurrentTime;
                 };
             });
+            
+            
+            setInterval(() => {
+                const currentTime = Date.now();
+                const timeLeft = Math.max(0, 400 - (currentTime - lastClickTime));
+                Button.textContent = timeLeft > 0 ? `Wait ${timeLeft} ms` : "Click me!";
+            }, 100);
         </script>
     </body>
 </html>
