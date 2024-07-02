@@ -1,6 +1,6 @@
 let Counter = document.getElementById("counter");
 
-let Count = 0;
+let Count = localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 0;
 let Skolko = 1;
     
 function Click() {
