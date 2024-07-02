@@ -54,11 +54,12 @@
                 
             Button.addEventListener("click", () => { 
                 const CurrentTime = Date.now()
-                if (CurrentTime - LastClickTime >= Cooldown)
-                Count++;
-                Counter.textContent = Count;
-                localStorage.setItem('count', Count);
-                LastClickTime = CurrentTime;
+                if (CurrentTime - LastClickTime >= Cooldown) {
+                    Count++;
+                    Counter.textContent = Count;
+                    localStorage.setItem('count', Count);
+                    LastClickTime = CurrentTime;
+                };
             });
         </script>
     </body>
