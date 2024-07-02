@@ -1,6 +1,10 @@
+body {
+    font-family: Sans-Serif;
+    height: 100vh;
+}
+
 .centered{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 }
