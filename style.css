@@ -10,6 +10,13 @@ body {
     flex-direction: column;
     justify-content: center;
     top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
+    left:50%;
+    transform: translate(50% -50%);
+    max-width: 200px;
+}
+.centered button {
+    height: 200px;
+}
+.centered button{
+    width: 100%;
 }
