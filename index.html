@@ -38,22 +38,23 @@
     <body>
         <div class="centered">
             <label id="counter">Loading</label>
-            <button onclick="Click()">Yamete kudasai</button>
+            <button id="button">Yamete kudasai</button>
         </div>
         
         <script>
             let Counter = document.getElementById("counter");
+            let Button = document.getElementById("button")
 
             let Count = localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 0;
             let Skolko = 1;
             
             Counter.textContent = Count;
                 
-            function Click() {
+            Button.addEventListener("click", () => { 
                 Count++;
                 Counter.textContent = Count;
                 localStorage.setItem('count', Count);
-            }
+            });
         </script>
     </body>
 </html>
