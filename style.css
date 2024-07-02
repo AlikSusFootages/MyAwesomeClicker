@@ -20,7 +20,7 @@ body {
     border-radius: 100%;
     box-shadow: 0 9px 20px rgba(0,0,0,0.1);
 }
-.centered button{
+.centered label{
     width: 100%;
     text-align: center;
 }
