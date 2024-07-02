@@ -6,4 +6,5 @@ let Skolko = 1;
 function Click() {
     Count++;
     counter.textContent = Count;
+    localStorage.setItem('count', count);
 }
