@@ -1,7 +1,7 @@
-let Count = document.getElementById("counter").content
+let Count = document.getElementById("counter").content;
 
-let Skolko = 1
+let Skolko = 1;
     
 function Click() {
-    Count = Count+Skolko
+    Count = Count+Skolko;
 }
