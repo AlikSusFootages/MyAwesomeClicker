@@ -7,6 +7,6 @@ body {
 .centered{
     display: flex;
     justify-content: center;
-    margin-top: 50%;
+    top: 50%;
     transform: translateY(-50%);
 }
