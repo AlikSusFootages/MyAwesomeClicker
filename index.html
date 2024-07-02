@@ -3,7 +3,37 @@
     <head>
         <title>My Awesome Clicker</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+<!--         <link rel="stylesheet" href="style.css">-->    
+        <style>
+            body {
+            font-family: Sans-Serif;
+            height: 100vh;
+            background: #dddddd;
+        }
+        
+        .centered{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+            max-width: 200px;
+        }
+        .centered button {
+            height: 200px;
+            border: 0;
+            border-radius: 100%;
+            box-shadow: 0 9px 20px rgba(0,0,0,0.1);
+        }
+        .centered label{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 18px;
+            font-size: 1.2em;
+        }
+        </style>
     </head>
     <body>
         <div class="centered">
@@ -11,6 +41,19 @@
             <button onclick="Click()">Yamete kudasai</button>
         </div>
         
-        <script src="index.js"></script>
+        <script>
+            let Counter = document.getElementById("counter");
+
+            let Count = localStorage.getItem('count') ? parseInt(localStorage.getItem('count')) : 0;
+            let Skolko = 1;
+            
+            Counter.textContent = Count;
+                
+            function Click() {
+                Count++;
+                Counter.textContent = Count;
+                localStorage.setItem('count', Count);
+            }
+        </script>
     </body>
 </html>
